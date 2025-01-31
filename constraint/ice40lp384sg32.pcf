@@ -1,0 +1,32 @@
+# System Clock
+set_io SYSCLK 30
+
+# Pushbuttons
+set_io RST_N 29
+#set_io BUTT1 27
+
+# Toggle Switch
+set_io LEVER 26
+
+# 7-Segment Display
+set_io SEG[0] 2
+set_io SEG[1] 1
+set_io SEG[2] 5
+set_io SEG[3] 6
+set_io SEG[4] 8
+set_io SEG[5] 7
+set_io SEG[6] 18
+set_io AN[0] 20
+set_io AN[1] 22
+set_io AN[2] 23
+#set_io AN[0] 19
+#set_io AN[1] 20
+#set_io AN[2] 22
+#set_io AN[3] 23
+
+# RGB LEDs
+#set_io RGB_LED_DAT 32
+
+# GPIO
+#set_io GPIO 31
+
