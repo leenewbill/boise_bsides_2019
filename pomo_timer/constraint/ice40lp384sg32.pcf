@@ -3,7 +3,7 @@ set_io SYSCLK 30
 
 # Pushbuttons
 set_io RST_N 29
-#set_io BUTT1 27
+set_io BUTT1 27
 
 # Toggle Switch
 set_io LEVER 26

@@ -23,6 +23,7 @@ module top (
     input SYSCLK,
     input RST_N,
     input LEVER,
+    input BUTT1,
 
     output        GPIO,
     output [6:0]  SEG, 
@@ -54,11 +55,18 @@ module top (
     // Debounce lever input
     ///////////////////////////////////////////////////////////////////////////
     wire lever_pulse;
+    wire butt1_pulse;
 
     debouncer lever_debounce (
         .clk           (clk),
         .signal_in     (LEVER),
         .deb_pulse_out (lever_pulse)
+    );
+
+    debouncer butt1_debounce (
+        .clk           (clk),
+        .signal_in     (BUTT1),
+        .deb_pulse_out (butt1_pulse)
     );
 
     ///////////////////////////////////////////////////////////////////////////
@@ -72,6 +80,7 @@ module top (
         .clk        (clk),
         .rst_n      (rst_n),
         .lever      (lever_pulse),
+        .button     (butt1_pulse),
         .min_bcd    (min_bcd),
         .sec_bcd    (sec_bcd),
         .blink_7sd  (blink_7sd)
