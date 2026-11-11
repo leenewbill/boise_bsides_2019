@@ -1,23 +1,18 @@
 `timescale 1ns / 1ps
+
 //////////////////////////////////////////////////////////////////////////////////
-// Company: Digilent Inc.
-// Engineer: Thomas Kappenman
-// 
-// Create Date:    03/03/2015 09:08:33 PM 
-// Design Name: 
-// Module Name:    seg7decimal 
-// Project Name: Nexys4DDR Keyboard Demo
-// Target Devices: Nexys4DDR
-// Tool Versions: 
-// Description: 7 segment display driver
-// 
-// Dependencies: 
+// Original Author: Thomas Kappenman
+// Original Company: Digilent Inc.
+// Original Project: Nexys4DDR Keyboard Demo
+// Original Date: 03/03/2015
 //
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
+// Module: seven_seg_disp
+// Description: Seven-segment display driver, adapted for the
+//              Boise BSides 2019 FPGA board.
 //
+// Target: Lattice iCE40LP384
 //////////////////////////////////////////////////////////////////////////////////
+
 module seven_seg_disp
 (
     input        clk,

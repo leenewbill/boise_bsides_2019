@@ -1,22 +1,10 @@
 `timescale 1ns / 1ps
 
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 02/12/2015 03:26:51 PM
-// Design Name: 
-// Module Name: // Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// Project: Boise BSides 2019 FPGA Pomodoro Timer
+// Module: top
+// Description: Top-level module for the Pomodoro timer design.
+// Target: Lattice iCE40LP384
 //////////////////////////////////////////////////////////////////////////////////
  
 module top (
